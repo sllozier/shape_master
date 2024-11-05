@@ -33,9 +33,13 @@ public class TestRunner {
 		System.out.println("|");
 
 		// Call test methods from different test classes
-		//runBinaryTreeTest();
-		//runTreeSyntaxExceptionTest();
-		//runProject3Test();
+		runShapeTest();
+		runTwoDimensionalShapeTest();
+		runThreeDimensionalShapeTest();
+		runCircleTest();
+		runSquareTest();
+		runTriangleTest();
+		runRectangleTest();
 
 		// Footer to indicate completion
 		System.out.println("\nAll tests completed.");
@@ -43,38 +47,194 @@ public class TestRunner {
 	}
 
 	/**
-	 * Executes and reports on tests for the BinaryTreeTest class. It runs the
-	 * following tests: testTreeConstruction, testInvalidTree,
-	 * testExtraCharactersAtEnd, testIsBST, testIsBalanced, testHeight, and
-	 * testBalancedTreeConstruction. The results of each test are displayed with
+	 * Executes and reports on tests for the ShapeTest class. It runs the
+	 * following tests: testGetNumberOfDimensions, testCalculateAreaAbstract, and
+	 * testCalculateVolumeAbstract. The results of each test are displayed with
 	 * execution times.
 	 */
-	//private static void runBinaryTreeTest() {
-	//	System.out.println("|+-- BinaryTreeTest");
+	private static void runShapeTest() {
+		System.out.println("|+-- ShapeTest");
 
-	//	// Execute and display results for Graduate specific tests
-	//	boolean result1 = BinaryTreeTest.testTreeConstruction();
-	//	boolean result2 = BinaryTreeTest.testInvalidTree();
-	//	boolean result3 = BinaryTreeTest.testExtraCharactersAtEnd();
-	//	boolean result4 = BinaryTreeTest.testIsBST();
-	//	boolean result5 = BinaryTreeTest.testIsBalanced();
-	//	boolean result6 = BinaryTreeTest.testHeight();
-	//	boolean result7 = BinaryTreeTest.testBalancedTreeConstruction();
+		// Execute and display results for Graduate specific tests
+		boolean result1 = ShapeTest.testGetNumberOfDimensions();
+		boolean result2 = ShapeTest.testCalculateAreaAbstract();
+		boolean result3 = ShapeTest.testCalculateVolumeAbstract();
+	
 
-	//	// Report on each test's execution time and result
-	//	System.out.println("|");
+		// Report on each test's execution time and result
+		System.out.println("|");
 
-	//	// Calculate and display execution times
-	//	displayResult("TEST 1: testTreeConstruction", result1);
-	//	displayResult("TEST 2: testInvalidTree", result2);
-	//	displayResult("TEST 3: testExtraCharactersAtEnd", result3);
-	//	displayResult("TEST 4: testIsBST", result4);
-	//	displayResult("TEST 5: testIsBalanced", result5);
-	//	displayResult("TEST 6: testHeight", result6);
-	//	displayResult("TEST 7: testBalancedTreeConstruction", result7);
-	//	System.out.println("|");
-	//}
+		// Calculate and display execution times
+		displayResult("TEST 1: testGetNumberOfDimensions", result1);
+		displayResult("TEST 2: testCalculateAreaAbstract", result2);
+		displayResult("TEST 3: testCalculateVolumeAbstract", result3);
 
+		System.out.println("|");
+	}
+
+
+
+	/**
+	 * Executes and reports on tests for the TwoDimensionalShapeTest class. It runs the
+	 * following tests: testCalculateVolume, and
+	 * testCalculateArea. The results of each test are displayed with
+	 * execution times.
+	 */
+	private static void runTwoDimensionalShapeTest() {
+		System.out.println("|+-- TwoDimensionalShapeTest");
+
+		// Execute and display results for Graduate specific tests
+		boolean result1 = TwoDimensionalShapeTest.testCalculateVolume();
+		boolean result2 = TwoDimensionalShapeTest.testCalculateArea();
+		
+	
+
+		// Report on each test's execution time and result
+		System.out.println("|");
+
+		// Calculate and display execution times
+		displayResult("TEST 1: testCalculateVolume", result1);
+		displayResult("TEST 2: testCalculateArea", result2);
+
+
+		System.out.println("|");
+	}
+
+
+	/**
+	 * Executes and reports on tests for the ThreeDimensionalShapeTest class. It runs the
+	 * following tests: testCalculateVolume, and
+	 * testCalculateArea. The results of each test are displayed with
+	 * execution times.
+	 */
+	private static void runThreeDimensionalShapeTest() {
+		System.out.println("|+-- TwoDimensionalShapeTest");
+
+		// Execute and display results for Graduate specific tests
+		boolean result1 = ThreeDimensionalShapeTest.testCalculateVolume();
+		boolean result2 = ThreeDimensionalShapeTest.testCalculateArea();
+		
+	
+
+		// Report on each test's execution time and result
+		System.out.println("|");
+
+		// Calculate and display execution times
+		displayResult("TEST 1: testCalculateVolume", result1);
+		displayResult("TEST 2: testCalculateArea", result2);
+
+
+		System.out.println("|");
+	}
+
+	/**
+	 * Executes and reports on tests for the CircleTest class. It runs the
+	 * following tests: testGetRadius, and
+	 * testCalculateArea. The results of each test are displayed with
+	 * execution times.
+	 */
+	private static void runCircleTest() {
+		System.out.println("|+-- CircleTest");
+
+		// Execute and display results for Graduate specific tests
+		boolean result1 = CircleTest.testCalculateArea();
+		boolean result2 = CircleTest.testGetRadius();
+		
+	
+
+		// Report on each test's execution time and result
+		System.out.println("|");
+
+		// Calculate and display execution times
+		displayResult("TEST 1: testCalculateArea", result1);
+		displayResult("TEST 2: testGetRadius", result2);
+
+
+		System.out.println("|");
+	}
+
+	/**
+	 * Executes and reports on tests for the SquareTest class. It runs the
+	 * following tests: testCalculateArea, and
+	 * testGetSide. The results of each test are displayed with
+	 * execution times.
+	 */
+	private static void runSquareTest() {
+		System.out.println("|+-- SquareTest");
+
+		// Execute and display results for Graduate specific tests
+		boolean result1 = SquareTest.testCalculateArea();
+		boolean result2 = SquareTest.testGetSide();
+		
+	
+
+		// Report on each test's execution time and result
+		System.out.println("|");
+
+		// Calculate and display execution times
+		displayResult("TEST 1: testCalculateArea", result1);
+		displayResult("TEST 2: testGetSide", result2);
+
+
+		System.out.println("|");
+	}
+
+	/**
+	 * Executes and reports on tests for the TriangleTest class. It runs the
+	 * following tests: testCalculateArea, testGetBase, and
+	 * testGetHeight. The results of each test are displayed with
+	 * execution times.
+	 */
+	private static void runTriangleTest() {
+		System.out.println("|+-- TriangleTest");
+
+		// Execute and display results for Graduate specific tests
+		boolean result1 = TriangleTest.testCalculateArea();
+		boolean result2 = TriangleTest.testGetBase();
+		boolean result3 = TriangleTest.testGetHeight();
+		
+	
+
+		// Report on each test's execution time and result
+		System.out.println("|");
+
+		// Calculate and display execution times
+		displayResult("TEST 1: testCalculateArea", result1);
+		displayResult("TEST 2: testGetBase", result2);
+		displayResult("TEST 3: testGetHeight", result3);
+
+
+		System.out.println("|");
+	}
+
+	/**
+	 * Executes and reports on tests for the RectangleTest class. It runs the
+	 * following tests: testCalculateArea, testGetLength, and
+	 * testGetWidth. The results of each test are displayed with
+	 * execution times.
+	 */
+	private static void runRectangleTest() {
+		System.out.println("|+-- RectangleTest");
+
+		// Execute and display results for Graduate specific tests
+		boolean result1 = RectangleTest.testCalculateArea();
+		boolean result2 = RectangleTest.testGetLength();
+		boolean result3 = RectangleTest.testGetWidth();
+		
+	
+
+		// Report on each test's execution time and result
+		System.out.println("|");
+
+		// Calculate and display execution times
+		displayResult("TEST 1: testCalculateArea", result1);
+		displayResult("TEST 2: testGetLength", result2);
+		displayResult("TEST 3: testGetWidth", result3);
+
+
+		System.out.println("|");
+	}
+	
 	
 	/**
 	 * Displays the result of a test in a formatted manner, including the test name

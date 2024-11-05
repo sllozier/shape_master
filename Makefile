@@ -18,37 +18,32 @@ LIB_DIR = lib
 
 
 # Java source files
-SOURCES = $(SRC_DIR)/Project1.java \
-          $(SRC_DIR)/ \
-		  $(SRC_DIR)/ \
-		  $(SRC_DIR)/ \
-          $(TEST_DIR)/Project1Test.java \
-          $(TEST_DIR)/ \
-          $(TEST_DIR)/\
-		   $(TEST_DIR)/ \
+SOURCES = $(SRC_DIR)/Shape.java\
+          $(TEST_DIR)/ShapeTest.java\
           $(TEST_DIR)/TestRunner.java
 
 # Default target
-all: compile generate_json_file run_tests run_project
+all: compile run_tests run_project
+
 
 # Rule to compile .class files in the bin directory
 compile:
+	@echo "Compiling Java sources..."
 	mkdir -p $(BIN_DIR)
-	$(JCC) --module-path $(LIB_DIR) --add-modules javafx.controls,javafx.fxml -d $(BIN_DIR) $(SOURCES)
+	$(JCC) -d $(BIN_DIR) -cp src $(SOURCES)
+	@echo "Compilation complete."
 
-# Rule to generate TXT file
-#generate_txt_file: compile
-	#cd $(BIN_DIR) && $(JVM) --module-path "../$(LIB_DIR)" --add-modules javafx.controls,javafx.fxml -cp .:../$(TEST_DIR) test.GeneratePointsFile
+
 
 # Rule to compile and run tests
 run_tests: compile
-	cd $(BIN_DIR) && $(JVM) --module-path "../$(LIB_DIR)" --add-modules javafx.controls,javafx.fxml -cp .:../$(SRC_DIR) test.TestRunner
+	cd $(BIN_DIR) && $(JVM) -cp .:../$(SRC_DIR) test.TestRunner
 
 
 
 # Rule to compile and run project
 run_project: compile
-	cd $(BIN_DIR) && $(JVM) --module-path "../$(LIB_DIR)" --add-modules javafx.controls,javafx.fxml -cp .:../$(SRC_DIR) main.Project4
+	cd $(BIN_DIR) && $(JVM) -cp .:../$(SRC_DIR) main.Project1
 
 # Rule to clean up
 clean:
