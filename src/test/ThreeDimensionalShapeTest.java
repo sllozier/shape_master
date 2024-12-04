@@ -1,5 +1,4 @@
 package test;
-import main.ThreeDimensionalShape;
 
 /**
  * Name: Sarah L. Lozier
@@ -9,6 +8,9 @@ import main.ThreeDimensionalShape;
  * Description: This class contains unit tests to validate the functionality of the ThreeDimensionalShape class,
  * ensuring that 3D shapes correctly implement area and volume calculations.
  */
+
+import main.ThreeDimensionalShape;
+
 public class ThreeDimensionalShapeTest {
 
     public static void main(String[] args) {
@@ -26,7 +28,7 @@ public class ThreeDimensionalShapeTest {
      * @return true if area calculation works (returns true as a placeholder)
      */
     public static boolean testCalculateArea() {
-        System.out.println("🧪 TEST 1 🧪");
+        System.out.println("🧪 TEST 6 🧪");
 
         // Anonymous class to test ThreeDimensionalShape
         ThreeDimensionalShape shape = new ThreeDimensionalShape() {
@@ -43,8 +45,7 @@ public class ThreeDimensionalShapeTest {
 
         double expectedArea = 0.0;
         double actualArea = shape.calculateArea();
-        System.out.println("Expected area: " + expectedArea);
-        System.out.println("Actual area: " + actualArea);
+        System.out.println("Expected: " + expectedArea + ", Actual: " + actualArea);
 
         return expectedArea == actualArea;
     }
@@ -55,7 +56,7 @@ public class ThreeDimensionalShapeTest {
      * @return true if volume calculation works (returns true as a placeholder)
      */
     public static boolean testCalculateVolume() {
-        System.out.println("🧪 TEST 2 🧪");
+        System.out.println("🧪 TEST 7 🧪");
 
         // Anonymous class to test ThreeDimensionalShape
         ThreeDimensionalShape shape = new ThreeDimensionalShape() {
@@ -72,8 +73,7 @@ public class ThreeDimensionalShapeTest {
 
         double expectedVolume = 0.0;
         double actualVolume = shape.calculateVolume();
-        System.out.println("Expected volume: " + expectedVolume);
-        System.out.println("Actual volume: " + actualVolume);
+        System.out.println("Expected: " + expectedVolume + ", Actual: " + actualVolume);
 
         return expectedVolume == actualVolume;
     }

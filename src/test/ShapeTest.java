@@ -1,5 +1,5 @@
 package test;
-import main.Shape;
+
 /**
  * Name: Sarah L. Lozier
  * Class: CMSC 335 - 7380
@@ -8,7 +8,7 @@ import main.Shape;
  * Description: ShapeTest.java contains unit tests to validate the functionality
  * of the Shape class, ensuring the proper setting of dimensions and abstract methods.
  */
-
+import main.Shape;
 
 public class ShapeTest {
 
@@ -25,14 +25,19 @@ public class ShapeTest {
 
     /**
      * Tests the getNumberOfDimensions method.
-     * 
+     *
      * @return true if the dimensions are correctly retrieved, false otherwise.
      */
     public static boolean testGetNumberOfDimensions() {
         System.out.println("🧪 TEST 1 🧪");
         Shape shape = new Shape(2) {
-            public double calculateArea() { return 0; }
-            public double calculateVolume() { return 0; }
+            public double calculateArea() {
+                return 0;
+            }
+
+            public double calculateVolume() {
+                return 0;
+            }
         };
         int expected = 2;
         int actual = shape.getNumberOfDimensions();
@@ -42,15 +47,20 @@ public class ShapeTest {
 
     /**
      * Tests that calculateArea is abstract and can be overridden.
-     * 
+     *
      * @return true if the method works as expected, false otherwise.
      */
     public static boolean testCalculateAreaAbstract() {
         System.out.println("🧪 TEST 2 🧪");
         try {
             Shape shape = new Shape(2) {
-                public double calculateArea() { return 50.0; }
-                public double calculateVolume() { return 0; }
+                public double calculateArea() {
+                    return 50.0;
+                }
+
+                public double calculateVolume() {
+                    return 0;
+                }
             };
             double expected = 50.0;
             double actual = shape.calculateArea();
@@ -64,15 +74,20 @@ public class ShapeTest {
 
     /**
      * Tests that calculateVolume is abstract and can be overridden.
-     * 
+     *
      * @return true if the method works as expected, false otherwise.
      */
     public static boolean testCalculateVolumeAbstract() {
         System.out.println("🧪 TEST 3 🧪");
         try {
             Shape shape = new Shape(3) {
-                public double calculateArea() { return 0; }
-                public double calculateVolume() { return 150.0; }
+                public double calculateArea() {
+                    return 0;
+                }
+
+                public double calculateVolume() {
+                    return 150.0;
+                }
             };
             double expected = 150.0;
             double actual = shape.calculateVolume();

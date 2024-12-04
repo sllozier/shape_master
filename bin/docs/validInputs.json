@@ -1,0 +1,153 @@
+{
+  "sessions": [
+    {
+      "sessionId": "session-1",
+      "actions": [
+        {
+          "actionType": 7,
+          "shapeType": "Cone",
+          "parameters": {
+            "radius": 79.00572160067007,
+            "height": 111.58918285975236
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 10,
+          "shapeType": "Exit",
+          "parameters": {},
+          "continue": "N"
+        }
+      ]
+    },
+    {
+      "sessionId": "session-2",
+      "actions": [
+        {
+          "actionType": 7,
+          "shapeType": "Cone",
+          "parameters": {
+            "radius": 24.577725922419113,
+            "height": 34.09924051670856
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 5,
+          "shapeType": "Sphere",
+          "parameters": {
+            "radius": 41.01191257194139
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 3,
+          "shapeType": "Square",
+          "parameters": {
+            "side": 96.83261617782863
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 10,
+          "shapeType": "Exit",
+          "parameters": {},
+          "continue": "N"
+        }
+      ]
+    },
+    {
+      "sessionId": "session-3",
+      "actions": [
+        {
+          "actionType": 3,
+          "shapeType": "Square",
+          "parameters": {
+            "side": 130.13481202457564
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 10,
+          "shapeType": "Exit",
+          "parameters": {},
+          "continue": "N"
+        }
+      ]
+    },
+    {
+      "sessionId": "session-4",
+      "actions": [
+        {
+          "actionType": 1,
+          "shapeType": "Circle",
+          "parameters": {
+            "radius": 24.82360204558352
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 8,
+          "shapeType": "Cylinder",
+          "parameters": {
+            "radius": 82.34317646645053,
+            "height": 22.748370280570647
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 4,
+          "shapeType": "Triangle",
+          "parameters": {
+            "base": 103.81226990816963,
+            "height": 50.8970788828001
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 10,
+          "shapeType": "Exit",
+          "parameters": {},
+          "continue": "N"
+        }
+      ]
+    },
+    {
+      "sessionId": "session-5",
+      "actions": [
+        {
+          "actionType": 9,
+          "shapeType": "Torus",
+          "parameters": {
+            "majorRadius": 71.15646204814139,
+            "minorRadius": 136.85117085375504
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 4,
+          "shapeType": "Triangle",
+          "parameters": {
+            "base": 99.87118893698809,
+            "height": 29.61324994173719
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 6,
+          "shapeType": "Cube",
+          "parameters": {
+            "side": 138.7350366931218
+          },
+          "continue": "Y"
+        },
+        {
+          "actionType": 10,
+          "shapeType": "Exit",
+          "parameters": {},
+          "continue": "N"
+        }
+      ]
+    }
+  ]
+}
